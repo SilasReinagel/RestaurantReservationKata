@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bella Vista Reservations</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="chat">
+    <header class="chat-header">
+      <div>
+        <h1>Bella Vista</h1>
+        <p>Book, change, or cancel a table</p>
+      </div>
+      <button id="new-chat" type="button" class="secondary">New conversation</button>
+    </header>
+
+    <section id="transcript" class="transcript" aria-live="polite" aria-label="Conversation"></section>
+
+    <div id="typing" class="typing" hidden aria-live="polite">Bella Vista is typing<span>.</span><span>.</span><span>.</span></div>
+
+    <form id="composer" class="composer">
+      <label for="input" class="visually-hidden">Message</label>
+      <textarea id="input" rows="1" maxlength="1000" placeholder="e.g. A table for 4 this Saturday at 7pm" autofocus></textarea>
+      <button id="send" type="submit">Send</button>
+    </form>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
